@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicatia 8</title>
+</head>
+<body>
+    <script>
+        function inmultirea(a, b){
+            return a * b;
+        }
+        function adunare(n, m){
+            if( typeof n =="number" && typeof m =="number"){
+                return n + m;
+            }
+            else {
+                return 0;
+            }
+        }
+        function scadere(n,m){
+            if(n < m){
+                return m - n;
+            }
+            else{
+                return n - m;
+            }
+        }
+        function impartire(n,m){
+            if(n < m){
+                return parseInt(m / n);
+            }
+            else{
+                return parseInt(n / m);
+            }
+        }
+        let x = eval(prompt('Primul Numar este', 2));
+        let y = eval(prompt('Al 2-lea numar este',4));
+        let op = 'a';
+        let operate = eval(prompt('Operatii efectuate: a- adunare,' +
+        ' s- scadere, im- imultire, in- inpartire',op));
+        alert(operatie);
+        if (operatie == 'a'){
+            console.log('Rezultatul adunarii este',adunare(x,y))
+        }
+        if (operatie == 's'){
+            console.log('Rezultatul scaderii este',scadere(x,y))
+        }
+
+        // console.log(inmultire(2,4));
+        // // let x = 23, y = 22;
+        // console.log(` adunare dintre ${x} si ${y} este ` , adunare(x, y))
+    </script>
+</body>
+</html>
